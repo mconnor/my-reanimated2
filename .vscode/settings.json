@@ -1,0 +1,51 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeForeground": "#000",
+        "titleBar.inactiveForeground": "#000000CC",
+        "titleBar.activeBackground": "#ff5100",
+        "titleBar.inactiveBackground": "#c300ff"
+    },
+    "files.exclude": {},
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "cSpell.words": [
+        "AWSUSER",
+        "Amplifyplatform",
+        "Kolor",
+        "MCREATED",
+        "MMODIFIED",
+        "MMSS",
+        "Millis",
+        "datepicker",
+        "datocms",
+        "deepmerge",
+        "fbuser",
+        "insta",
+        "metafields",
+        "parralleal",
+        "precommit",
+        "prefetch",
+        "recaptcha",
+        "setimmediate"
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "prettier.configPath": "./.prettierrc.json",
+    "eslint.alwaysShowStatus": true,
+    "eslint.packageManager": "yarn",
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    // "eslint.lintTask.enable": true,
+    // "css.validate": false,
+    // "less.validate": false,
+    // "scss.validate": false
+}
