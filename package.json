@@ -35,7 +35,8 @@
         "web": "expo start --web",
         "eject": "expo eject",
         "prepare": "husky install",
-        "lint": "eslint -c .eslintrc.json --ext .tsx --ext .ts ./"
+        "lint": "eslint -c .eslintrc.json --ext .tsx --ext .ts ./",
+        "fix": "eslint -c .eslintrc.json --ext .tsx --ext .ts ./ --fix"
     },
     "private": true,
     "husky": {
