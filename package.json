@@ -34,7 +34,8 @@
         "ios": "expo start --ios",
         "web": "expo start --web",
         "eject": "expo eject",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "lint": "eslint -c .eslintrc.json --ext .tsx --ext .ts ./"
     },
     "private": true,
     "husky": {
