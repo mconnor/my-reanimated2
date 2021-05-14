@@ -1,7 +1,9 @@
 // @generated: @expo/next-adapter@2.1.71
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import AnimatedStyleUpdateExample from '../components/AnimatedStyleUpdateExample'
+import dynamic from 'next/dynamic'
+
+// import AnimatedStyleUpdateExample from '../components/AnimatedStyleUpdateExample'
 import Test from '../components/Test'
 
 const styles = StyleSheet.create({
@@ -14,6 +16,13 @@ const styles = StyleSheet.create({
         fontSize: 16,
     },
 })
+
+const AnimatedStyleUpdateExample = dynamic(
+    () => import('../components/AnimatedStyleUpdateExample'),
+    {
+        ssr: false,
+    }
+)
 
 export default function App(): JSX.Element {
     return (

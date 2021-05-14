@@ -11,5 +11,6 @@ module.exports = {
                 looseClasses: true,
             },
         ],
+        ['react-native-reanimated/plugin'],
     ],
 }
