@@ -4,7 +4,16 @@
         "forceConsistentCasingInFileNames": true,
         "module": "esnext",
         "isolatedModules": true,
-        "jsx": "preserve"
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "paths": {
+            "~/*": [
+                "./*"
+            ],
+            "baseUrl": [
+                "./"
+            ]
+        }
     },
     "extends": "expo/tsconfig.base",
     "include": [

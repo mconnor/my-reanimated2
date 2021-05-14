@@ -1,10 +1,8 @@
 // @generated: @expo/next-adapter@2.1.71
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import dynamic from 'next/dynamic'
-
-// import AnimatedStyleUpdateExample from '../components/AnimatedStyleUpdateExample'
-import Test from '../components/Test'
+import Hello from 'components/Hello'
 
 const styles = StyleSheet.create({
     container: {
@@ -17,8 +15,8 @@ const styles = StyleSheet.create({
     },
 })
 
-const AnimatedStyleUpdateExample = dynamic(
-    () => import('../components/AnimatedStyleUpdateExample'),
+const ImportedAnim = dynamic(
+    () => import('components/AnimatedStyleUpdateExample'),
     {
         ssr: false,
     }
@@ -27,9 +25,8 @@ const AnimatedStyleUpdateExample = dynamic(
 export default function App(): JSX.Element {
     return (
         <View style={styles.container}>
-            <Test />
-            <AnimatedStyleUpdateExample />
-            <Text style={styles.text}>Wzzzzelcome to Expo + Next.js 👋</Text>
+            <Hello copyStyle={styles.text} copy="It's Thursday" />
+            <ImportedAnim />
         </View>
     )
 }
