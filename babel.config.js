@@ -2,4 +2,14 @@
 // Learn more: https://github.com/expo/expo/blob/master/docs/pages/versions/unversioned/guides/using-nextjs.md#shared-steps
 
 
-module.exports = { presets: ['babel-preset-expo'] }
+module.exports = {
+    presets: [['airbnb'], ['babel-preset-expo']],
+    plugins: [
+        [
+            '@babel/plugin-proposal-class-properties',
+            {
+                looseClasses: true,
+            },
+        ],
+    ],
+}

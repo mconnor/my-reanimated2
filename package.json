@@ -11,10 +11,12 @@
     },
     "devDependencies": {
         "@babel/core": "~7.14.2",
+        "@babel/plugin-proposal-class-properties": "^7.13.0",
         "@types/react": "~17.0.5",
         "@types/react-native": "~0.64.5",
         "@typescript-eslint/eslint-plugin": "^4.23.0",
         "@typescript-eslint/parser": "^4.23.0",
+        "babel-preset-airbnb": "^5.0.0",
         "babel-preset-expo": "8.3.0",
         "eslint": "^7.26.0",
         "eslint-config-airbnb": "18.2.1",
@@ -49,5 +51,8 @@
     },
     "lint-staged": {
         "*.{ts,tsx}": "eslint"
+    },
+    "engines": {
+        "node": ">=14.16.1 <15"
     }
 }
