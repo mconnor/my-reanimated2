@@ -3,6 +3,12 @@
 
 const { withExpo } = require('@expo/next-adapter');
 
-module.exports = withExpo({
-  projectRoot: __dirname,
-});
+const withTM = require('next-transpile-modules')(['react-native-reanimated'
+])
+module.exports = withExpo(
+    withTM({
+        projectRoot: __dirname,
+    })
+)
+
+
