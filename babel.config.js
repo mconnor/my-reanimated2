@@ -3,7 +3,15 @@
 
 
 module.exports = {
-    presets: [['airbnb'], ['babel-preset-expo']],
+    presets: [
+        ['airbnb'],
+        [
+            'babel-preset-expo',
+            {
+                lazyImports: true,
+            },
+        ],
+    ],
     plugins: [
         [
             '@babel/plugin-proposal-class-properties',
