@@ -1,5 +1,5 @@
 // @generated: @expo/next-adapter@2.1.71
-import React from 'react'
+
 import { StyleSheet, View } from 'react-native'
 import dynamic from 'next/dynamic'
 import Hello from 'components/Hello'
@@ -22,7 +22,7 @@ const ImportedAnim = dynamic(
     }
 )
 
-export default function App(): JSX.Element {
+export default function App() {
     return (
         <View style={styles.container}>
             <Hello copyStyle={styles.text} copy="It's Thursday" />

@@ -1,4 +1,3 @@
-import React from 'react'
 import Animated, {
     useSharedValue,
     withTiming,
@@ -7,7 +6,7 @@ import Animated, {
 } from 'react-native-reanimated'
 import { View, Button } from 'react-native'
 
-export default function AnimatedStyleUpdateExample(): JSX.Element {
+export default function AnimatedStyleUpdateExample() {
     const randomWidth = useSharedValue(10)
 
     const config = {

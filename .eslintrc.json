@@ -8,6 +8,7 @@
         "airbnb",
         "airbnb/hooks",
         "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended",
         "prettier",
         "plugin:prettier/recommended"
     ],
@@ -26,6 +27,9 @@
         "project": "./tsconfig.json"
     },
     "rules": {
+        "@typescript-eslint/explicit-module-boundary-types" : 0,
+       "react/react-in-jsx-scope": 0,
+        "react/require-default-props":0,
         "import/no-unresolved": 0,
         "react/jsx-filename-extension": [
             1,
@@ -58,5 +62,10 @@
         "@typescript-eslint/no-shadow": [
             "error"
         ]
+    },
+    "settings": {
+      "react": {
+          "version": "detect"
+        }
     }
 }
