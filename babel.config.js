@@ -4,7 +4,7 @@
 
 module.exports = {
     presets: [
-        ['airbnb'],
+        ['airbnb'], [ "next/babel"],
         [
             'babel-preset-expo',
             {

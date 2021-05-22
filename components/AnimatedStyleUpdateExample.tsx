@@ -6,7 +6,7 @@ import Animated, {
 } from 'react-native-reanimated'
 import { View, Button } from 'react-native'
 
-export default function AnimatedStyleUpdateExample() {
+export default function AnimatedStyleUpdateExample(): JSX.Element {
     const randomWidth = useSharedValue(10)
 
     const config = {
